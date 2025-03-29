@@ -1,4 +1,4 @@
-# Protein Subcellular Location Predictor
+# Predicting The Subcellular Localisation Of Proteins
 
 ## Project Overview
 This project implements a machine learning classifier to predict the subcellular location of eukaryotic proteins. The classifier categorizes proteins into five classes:
@@ -39,6 +39,12 @@ The model was evaluated using:
 - Metrics: Accuracy, F1 score, Matthews Correlation Coefficient
 - Confidence estimation for predictions (High/Medium/Low)
 - Performance on a blind challenge test set
+
+## Results
+- The model achieved a Matthews Correlation Coefficient of 0.5977, with class-specific F1-scores ranging from 0.52 (cytosolic) to 0.85 (secreted), reflecting that proteins with distinctive targeting signals are more accurately classified.
+- Feature importance analysis showed global amino acid composition as the strongest predictor (14.26% impact when removed), followed by N-terminal features (2.98%). This aligns with biological understanding that evolutionary pressure adapts protein composition to specific subcellular environments.
+- Targeted feature enhancements substantially improved performance for specific compartments, with mitochondrial and secreted protein classification improving by 13.3% and 11.8% respectively, demonstrating the value of incorporating biological domain knowledge.
+- The confidence estimation system provides practical utility by allowing users to assess prediction reliability, with 50% of blind test predictions receiving medium confidence scores.
 
 ## Usage
 ```bash
