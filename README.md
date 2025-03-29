@@ -49,7 +49,7 @@ The model was evaluated using:
 ## Usage
 ```bash
 # Example usage
-python predict_location.py input_sequence.fasta
+jupyter notebook predict_location.ipynb
 ```
 
 ## Output Format
